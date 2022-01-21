@@ -9,12 +9,11 @@ output:
 2 : scissors
 """
 
+
 def computerChoice():
-  
-  
-  
-  
-  return value
+  import random as r
+  computer = r.randint(0,2)
+  return computer
 
 
 if __name__ == "__main__":

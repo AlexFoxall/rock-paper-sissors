@@ -18,12 +18,39 @@ Output:
 '''
 
 def playerWins(computer,player):
-  
-  return 0
+  count = 0 
+  if computer == player:
+    count = count
+    print('tie')
+  elif computer == 0:
+    if player == 1:
+      print("player wins")
+      count = count + 1
+    else:
+      print('computer wins')
+      count = count - 1
+  elif computer == 1:
+    if player == 2:
+      print('player wins')
+      count = count + 1
+    else:
+      print('computer wins')
+      count = count - 1
+  elif computer == 2:
+    if player == 0:
+      print('player wins')
+      count = count + 1
+    else:
+      print('computer wins')
+      count = count - 1
+  return count
 
+x = playerWins(1,2)
+print(x)
+'''
 if __name__ == "__main__":
   assert playerWins(1,1) == 0
   assert playerWins(1,0) == -1
   assert playerWins(1,2) == 1
   assert playerWins(2,1) == -1
-  
+'''
