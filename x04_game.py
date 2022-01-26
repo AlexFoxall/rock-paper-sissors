@@ -12,9 +12,8 @@ def main():
   x = playerChoice()
   y = computerChoice()
   z = playerWins(x,y)
-  print(x)
-  print(y)
-  print(z)
+  
+  
   
   if z == 0:
     print("0: tie")
@@ -22,6 +21,7 @@ def main():
     print('1: player wins')
   if z == -1:
     print('-1: player loses') 
+  
   return None
 if __name__ == "__main__":
   main()
